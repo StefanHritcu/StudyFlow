@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2016",                              /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "jsx": "react",                                  /* Specify JSX code generation (use "react" for React JSX). */
+    "module": "commonjs",                            /* Specify what module code is generated. */
+    "esModuleInterop": true,                         /* Emit additional JavaScript to ease support for importing CommonJS modules. */
+    "forceConsistentCasingInFileNames": true,        /* Ensure that casing is correct in imports. */
+    
+    /* Modules */
+    "moduleResolution": "node",                      /* Resolve modules the same way Node.js does. */
+    
+    /* Emit */
+    "sourceMap": true,                               /* Create source map files for emitted JavaScript files. */
+    "declaration": true,                             /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+    "declarationMap": true,                          /* Create sourcemaps for .d.ts files. */
+    "removeComments": true,                          /* Remove comments from the output. */
+
+    /* Type Checking */
+    "strict": true,                                  /* Enable all strict type-checking options. */
+    "skipLibCheck": true,                            /* Skip type checking all .d.ts files. */
+
+    /* Interop Constraints */
+    "isolatedModules": true                          /* Ensure that each file can be safely transpiled without relying on other imports. */
+  }
+}
