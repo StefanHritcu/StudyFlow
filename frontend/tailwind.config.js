@@ -6,6 +6,44 @@ export default {
       fontFamily: {
         playfair: ['"Playfair Display"', "serif"],
       },
+      colors: {
+        // background and layouts
+        mainColor: "#2c303a",
+        secondColor: "#131417",
+
+        //main & paragraph text color
+        mainTextColor: "#d6d6d6",
+        paragraphColor: "#61646f",
+
+        //special colors & tag colors
+        specialViolet: "#ae63e4",
+        specialGreen: "#47cf73",
+        specialYellow: "#ffdd40",
+        specialBlue: "#46baff",
+
+        // tag colors & special colors
+        tagBlue: "#0b46b2",
+        tagBlueShadow: "#1d2635",
+
+        tagGreen: "#4f9c4f",
+        tagGreenShadow: "#242d28",
+
+        tagYellow: "#f0eb02",
+        tagYellowShadow: "#313221",
+
+        tagOrange: "#9e532c",
+        tagOrangeShadow: "#312825",
+
+        //seniority colors
+        juniorColor: "#3087d2",
+        juniorColorShadow: "#212b36",
+
+        middleColor: "#f8a301",
+        middleColorShadow: "#312c21",
+
+        seniorColor: "#ba4f4f",
+        seniorColorShadow: "#2f2629",
+      },
       screens: {
         // Extra small phones and old devices
         xs: "320px",

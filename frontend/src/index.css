@@ -1,18 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Libre+Baskerville:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Libre+Baskerville:wght@700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   margin: 0;
   padding: 0;
+  background-color: theme("colors.mainColor")
+}
+h1, h2, h3 {
+  color: theme("colors.mainTextColor");
+}
+p {
+  color: theme("colors.paragraphColor")
 }
 
-
 .libre-baskerville-bold {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.border-light {
+  border: 0.2px solid #555454;
 }
