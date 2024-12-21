@@ -1,3 +1,4 @@
+
 1. Sviluppo Frontend e Design
 Design e User Experience (UX/UI): Wireframe, mockups, design patterns, accessibilità, usabilità, responsive design, call-to-actions (CTA), effetto alone, dark/light mode, gestione focus/tab index.
 Tecnologie Frontend: HTML5, CSS3, JavaScript, TypeScript, React, Tailwind CSS, Framer Motion, WebAssembly, SVG, grafica vettoriale avanzata.
