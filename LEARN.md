@@ -1,230 +1,232 @@
+(J = Junior, M = Middle, S = Senior)
+
 # 1. Sviluppo Frontend e Design
 
 ## Design e User Experience (UX/UI):
-- Pipelines
-- Wireframes
-- Mockups
-- Call-to-actions (CTA)
-- Effetto alone
-- Contrast checker
-- Usabilità
-- Accessibilità
-- Responsive design
-- Dark/Light mode
-- Tecniche avanzate per gestire focus e tab index
-- Testing dei colori con simulazione per daltonici
-- Ottimizzazione dell'accessibilità per screen reader
-- Utilizzo di WCAG per le interfacce utente complesse
-- Testing visivo dell'accessibilità
-- Utilizzo di pseudo-elementi per migliorare l'accessibilità visiva
+- Pipelines (J)
+- Wireframes (J)
+- Mockups (J)
+- Call-to-actions (CTA) (M)
+- Effetto alone (M)
+- Contrast checker (J)
+- Usabilità (M)
+- Accessibilità (S)
+- Responsive design (M)
+- Dark/Light mode (M)
+- Tecniche avanzate per gestire focus e tab index (S)
+- Testing dei colori con simulazione per daltonici (M)
+- Ottimizzazione dell'accessibilità per screen reader (S)
+- Utilizzo di WCAG per le interfacce utente complesse (S)
+- Testing visivo dell'accessibilità (M)
+- Utilizzo di pseudo-elementi per migliorare l'accessibilità visiva (M)
 
 ## Tecnologie Frontend:
-- HTML5
-- CSS3
-- JavaScript
-- TypeScript
-- React
-- Tailwind CSS
-- Framer Motion
-- WebAssembly
-- SVG
-- Grafica vettoriale avanzata
-- Creazione di layout avanzati con Tailwind CSS
-- Implementazione di sistemi di design scalabili con Tailwind
-- Animazioni SVG con JavaScript e CSS
+- HTML5 (J)
+- CSS3 (J)
+- JavaScript (J)
+- TypeScript (M)
+- React (M)
+- Tailwind CSS (M)
+- Framer Motion (M)
+- WebAssembly (S)
+- SVG (M)
+- Grafica vettoriale avanzata (S)
+- Creazione di layout avanzati con Tailwind CSS (M)
+- Implementazione di sistemi di design scalabili con Tailwind (M)
+- Animazioni SVG con JavaScript e CSS (S)
 
 ## Ottimizzazione delle Prestazioni:
-- Lazy loading
-- Riduzione del bundle size
-- Code splitting
-- Responsive images
-- Compressione delle immagini
-- Ottimizzazione delle performance
-- Progressive Web App (PWA)
-- CDN
-- Performance SEO (riduzione del Cumulative Layout Shift, ottimizzazione dei Largest Contentful Paint)
-- Strategie per migliorare la Core Web Vitals
-- Riduzione della latenza delle animazioni interattive
-- Gestione delle performance delle animazioni CSS con proprietà GPU-friendly
-- Tecniche per gestire animazioni complesse in React con Framer Motion
+- Lazy loading (M)
+- Riduzione del bundle size (M)
+- Code splitting (S)
+- Responsive images (M)
+- Compressione delle immagini (M)
+- Ottimizzazione delle performance (S)
+- Progressive Web App (PWA) (S)
+- CDN (M)
+- Performance SEO (riduzione del Cumulative Layout Shift, ottimizzazione dei Largest Contentful Paint) (S)
+- Strategie per migliorare la Core Web Vitals (S)
+- Riduzione della latenza delle animazioni interattive (S)
+- Gestione delle performance delle animazioni CSS con proprietà GPU-friendly (M)
+- Tecniche per gestire animazioni complesse in React con Framer Motion (S)
 
 ## Testing e Qualità del Codice:
-- Testing automatizzato (unit, integration, E2E)
-- Implementare test A/B
-- BrowserStack
-- Refactoring
-- Simulazione daltonismo
-- End-to-End Testing (E2E)
-- Integration Testing
-- Unit testing
-- Mocking
-- Snapshot testing
-- Test coverage
-- Performance and accessibility testing
-- Contract testing
-- Property-Based Testing
-- Automazione dei test
+- Testing automatizzato (unit, integration, E2E) (S)
+- Implementare test A/B (M)
+- BrowserStack (M)
+- Refactoring (M)
+- Simulazione daltonismo (M)
+- End-to-End Testing (E2E) (S)
+- Integration Testing (S)
+- Unit testing (M)
+- Mocking (M)
+- Snapshot testing (M)
+- Test coverage (M)
+- Performance and accessibility testing (S)
+- Contract testing (S)
+- Property-Based Testing (S)
+- Automazione dei test (S)
 
 ---
 
 # 2. Architettura Software e Sviluppo Backend
 
 ## Architettura e Strutture Dati:
-- Architetture a microservizi
-- API RESTful
-- GraphQL
-- Architettura client-server
-- Modularità del codice
-- Micro frontend
-- Gestione delle risorse
-- JAMstack
-- Grafi e strutture dati
-- Algoritmi
+- Architetture a microservizi (S)
+- API RESTful (M)
+- GraphQL (S)
+- Architettura client-server (M)
+- Modularità del codice (M)
+- Micro frontend (S)
+- Gestione delle risorse (M)
+- JAMstack (M)
+- Grafi e strutture dati (S)
+- Algoritmi (S)
 
 ## Gestione dello Stato e Flussi di Lavoro:
-- Redux (store, actions, reducers, dispatch, selectors, middleware)
-- Redux Toolkit (RTK)
-- Reselect
-- Normalizzazione
-- Devtools integration
-- Code splitting
+- Redux (store, actions, reducers, dispatch, selectors, middleware) (S)
+- Redux Toolkit (RTK) (S)
+- Reselect (S)
+- Normalizzazione (S)
+- Devtools integration (M)
+- Code splitting (S)
 
 ## Database e Storage:
-- IndexedDB
-- SQL
-- NoSQL
-- WebGL
-- Web Worker
-- Service Worker
-- Shared Worker
-- Gestione delle query
-- Ottimizzazione delle query
-- Tipi di storage (locale e cloud)
+- IndexedDB (M)
+- SQL (M)
+- NoSQL (M)
+- WebGL (S)
+- Web Worker (S)
+- Service Worker (S)
+- Shared Worker (S)
+- Gestione delle query (S)
+- Ottimizzazione delle query (S)
+- Tipi di storage (locale e cloud) (M)
 
 ---
 
 # 3. JavaScript e Tecnologie Avanzate
 
 ## JavaScript Avanzato:
-- Closures
-- Strict mode
-- Classi
-- DOM tree
-- Manipolazione del DOM
-- Creazione ed eliminazione di nodi
-- Selettori di elementi
-- Gestione degli eventi
-- Event loop
-- Critical rendering path
-- API dei browser
-- Funzionamento interno dei browser
-- Callback
-- Promises
-- Async/await
-- Programmazione orientata agli oggetti
-- Programmazione funzionale
-- Programmazione reattiva
+- Closures (M)
+- Strict mode (M)
+- Classi (M)
+- DOM tree (M)
+- Manipolazione del DOM (M)
+- Creazione ed eliminazione di nodi (M)
+- Selettori di elementi (J)
+- Gestione degli eventi (M)
+- Event loop (M)
+- Critical rendering path (S)
+- API dei browser (M)
+- Funzionamento interno dei browser (S)
+- Callback (J)
+- Promises (M)
+- Async/await (M)
+- Programmazione orientata agli oggetti (M)
+- Programmazione funzionale (S)
+- Programmazione reattiva (S)
 
 ## TypeScript e Best Practices:
-- Tipi primitivi
-- Interfacce
-- Tipi personalizzati
-- Componenti tipizzati
-- Moduli e namespace
-- Enum
-- Generic
-- Utility types
-- Intersection and union types
-- Type guards
-- Mapped types
-- Discriminated unions
-- Strict mode
+- Tipi primitivi (J)
+- Interfacce (M)
+- Tipi personalizzati (M)
+- Componenti tipizzati (M)
+- Moduli e namespace (M)
+- Enum (M)
+- Generic (M)
+- Utility types (M)
+- Intersection and union types (S)
+- Type guards (M)
+- Mapped types (S)
+- Discriminated unions (S)
+- Strict mode (M)
 
 ## Performance e Ottimizzazione:
-- Garbage collection
-- Gestione memoria
-- Algoritmi
-- Sistemi operativi
-- Big-O notation
-- Ottimizzazione delle performance
-- Compressione Gzip
-- Caching
-- Dinamic rendering
+- Garbage collection (S)
+- Gestione memoria (S)
+- Algoritmi (S)
+- Sistemi operativi (S)
+- Big-O notation (S)
+- Ottimizzazione delle performance (S)
+- Compressione Gzip (M)
+- Caching (M)
+- Dinamic rendering (S)
 
 ## Testing e Automazione:
-- Test-driven development
-- Input validation
-- Automazione dei test
-- Debugging avanzato
+- Test-driven development (S)
+- Input validation (M)
+- Automazione dei test (S)
+- Debugging avanzato (S)
 
 ---
 
 # 4. SEO, Ottimizzazione e Sicurezza
 
 ## SEO Tecnico:
-- Meta tag
-- Structured Data
-- Canonical tags
-- Open Graph
-- SEO locale
-- Page speed optimization
-- Riduzione del Cumulative Layout Shift (CLS)
-- Ottimizzazione dei Largest Contentful Paint (LCP)
-- Implementazione di Web Stories
-- Sitemap XML
-- Hreflang
-- Audit SEO con Lighthouse
-- Microdata per il markup strutturato
-- Strategie per keyword research e analisi dei competitor SEO
+- Meta tag (J)
+- Structured Data (M)
+- Canonical tags (M)
+- Open Graph (M)
+- SEO locale (M)
+- Page speed optimization (S)
+- Riduzione del Cumulative Layout Shift (CLS) (S)
+- Ottimizzazione dei Largest Contentful Paint (LCP) (S)
+- Implementazione di Web Stories (M)
+- Sitemap XML (M)
+- Hreflang (M)
+- Audit SEO con Lighthouse (S)
+- Microdata per il markup strutturato (M)
+- Strategie per keyword research e analisi dei competitor SEO (S)
 
 ## Ottimizzazione delle Prestazioni:
-- Ottimizzazione immagini
-- Compressione Gzip
-- CDN
-- Audit SEO
-- Ottimizzazione del caricamento asincrono delle risorse
-- Riduzione della latenza delle animazioni interattive
+- Ottimizzazione immagini (M)
+- Compressione Gzip (M)
+- CDN (M)
+- Audit SEO (S)
+- Ottimizzazione del caricamento asincrono delle risorse (S)
+- Riduzione della latenza delle animazioni interattive (S)
 
 ## Sicurezza Web:
-- HTTPS
-- XSS prevention
-- CSRF protection
-- Secure cookies (flag HttpOnly)
-- Error handling
-- Logging
-- Crittografia (hash, encoding, decoding)
-- SSL/TLS
-- Token di accesso
-- Gestione della sessione
-- Sanitizzazione
-- Validazione
+- HTTPS (M)
+- XSS prevention (S)
+- CSRF protection (S)
+- Secure cookies (flag HttpOnly) (M)
+- Error handling (M)
+- Logging (M)
+- Crittografia (hash, encoding, decoding) (S)
+- SSL/TLS (S)
+- Token di accesso (M)
+- Gestione della sessione (M)
+- Sanitizzazione (M)
+- Validazione (M)
 
 ## Accessibilità e Usabilità:
-- Regole per un codice semanticamente corretto
-- Utilizzo di landmark ARIA
-- Ottimizzazione dell'accessibilità per screen reader
-- Utilizzo di WCAG
-- Testing accessibilità con Axe
+- Regole per un codice semanticamente corretto (M)
+- Utilizzo di landmark ARIA (S)
+- Ottimizzazione dell'accessibilità per screen reader (S)
+- Utilizzo di WCAG (S)
+- Testing accessibilità con Axe (S)
 
 ---
 
 # 5. Build Configuration e Gestione Ambienti
 
 ## Build Configuration:
-- Configurazione di tool come Webpack, Vite, Parcel, Rollup
-- Compilatori e interpreti
+- Configurazione di tool come Webpack, Vite, Parcel, Rollup (S)
+- Compilatori e interpreti (S)
 
 ## Module Bundling e Asset Management:
-- Ottimizzazione e gestione di risorse statiche (immagini, script, file CSS/JS)
-- Utilizzo di CDN per asset statici
-- Compressione di file CSS e JavaScript
+- Ottimizzazione e gestione di risorse statiche (immagini, script, file CSS/JS) (M)
+- Utilizzo di CDN per asset statici (M)
+- Compressione di file CSS e JavaScript (M)
 
 ## Developer Tools e Configurazione Ambienti:
-- Configurazione IDE
-- Debugging avanzato
-- Automazione workflow
-- Gestione ambienti (dev, staging, prod)
-- Hot update
-- Sistemi di versionamento (clone, pull, fetch, log, push, reset, restore, switch, checkout, branching, merge, rebase, workflow, cherry pick, stash, squash, reset, tags)
-- Dependency Management
-- Standard W3C
+- Configurazione IDE (J)
+- Debugging avanzato (S)
+- Automazione workflow (M)
+- Gestione ambienti (dev, staging, prod) (M)
+- Hot update (M)
+- Sistemi di versionamento (clone, pull, fetch, log, push, reset, restore, switch, checkout, branching, merge, rebase, workflow, cherry pick, stash, squash, reset, tags) (M)
+- Dependency Management (M)
+- Standard W3C (M)
