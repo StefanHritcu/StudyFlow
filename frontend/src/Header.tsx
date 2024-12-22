@@ -37,6 +37,9 @@ const Header: React.FC = () => {
                     <p className="text-[14px] text-mainTextColor">To Review</p>
                   </Link>
                 </li>
+                <li>
+                  <Link to="/example">Ex-..</Link>
+                </li>
               </ul>
             </nav>
           </div>
