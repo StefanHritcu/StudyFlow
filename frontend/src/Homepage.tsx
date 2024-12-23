@@ -15,8 +15,13 @@ const Homepage: React.FC = () => {
           property="og:description"
           content="The best platform to organize and manage your study sessions."
         />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="www.google.it" />
       </Helmet>
-      <div>Homepage</div>
+
+      <div>
+        <h1>homepage</h1>
+      </div>
     </>
   );
 };

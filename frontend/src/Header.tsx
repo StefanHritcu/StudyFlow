@@ -2,8 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Search from "./components/Search";
 import { FaArrowDown } from "react-icons/fa";
+import { CiUser } from "react-icons/ci";
+import { useAppSelector } from "./redux/Hook";
 
 const Header: React.FC = () => {
+  const isLoggedStatus = useAppSelector((state) => state.main.isLogged);
   return (
     <>
       <header className="bg-mainColor h-auto border-b border-paragraphColor">
@@ -12,7 +15,7 @@ const Header: React.FC = () => {
           {/* LOGO */}
           <Link to="/">
             <div className="text-center w-[150px] tablet:w-[190px] tablet-lg:w-[220px] laptop:w-[290px] border-r border-paragraphColor">
-              <h2 className="p-2 text-[16px] tablet:text-[18px] tablet-xl:text-[20px] laptop:text-[22px]">
+              <h2 className="p-2 text-[16px] tablet:text-[18px] tablet-xl:text-[20px] laptop:text-[24px]">
                 My Workspace
               </h2>
             </div>
@@ -37,11 +40,29 @@ const Header: React.FC = () => {
                     <p className="text-[14px] text-mainTextColor">To Review</p>
                   </Link>
                 </li>
-                <li>
-                  <Link to="/example">Ex-..</Link>
-                </li>
               </ul>
             </nav>
+
+            {/* SIGNIN / LOGIN */}
+            <div className="flex items-center">
+              {isLoggedStatus ? (
+                <div className="rounded-full p-1.5 w-8 h-8 bg-specialBlue mr-4 cursor-pointer">
+                  <p
+                    className="text-secondColor text-sm font-thin"
+                    title="Profile"
+                  >
+                    DS
+                  </p>
+                </div>
+              ) : (
+                <div className="mr-4 cursor-pointer">
+                  <CiUser
+                    className="w-8 h-8 text-mainTextColor"
+                    title="Login"
+                  />
+                </div>
+              )}
+            </div>
           </div>
         </div>
         {/* SECOND HEADER --- ONLY FOT MOBILE AND TABLES */}
