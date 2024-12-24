@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Homepage from "./Homepage";
 import Example from "./Example";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import SecondHeader from "./SecondHeader";
 
 const App: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <HelmetProvider>
         <div>
           <Header />
+          <SecondHeader />
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/example" element={<Example />} />

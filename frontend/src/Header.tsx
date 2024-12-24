@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Search from "./components/Search";
 import { FaArrowDown } from "react-icons/fa";
@@ -7,6 +7,15 @@ import { useAppSelector } from "./redux/Hook";
 
 const Header: React.FC = () => {
   const isLoggedStatus = useAppSelector((state) => state.main.isLogged);
+
+  {
+    /* State and onChange that displays the value of the input typed by the user on the screen */
+  }
+  const [searchValue, setSearchValue] = useState<string>("");
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(event.target.value);
+  };
+
   return (
     <>
       <header className="bg-mainColor h-auto border-b border-paragraphColor">
@@ -25,7 +34,7 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             {/* SEARCH INPUT */}
             <div className="hidden tablet-xl:block mr-12">
-              <Search value={""} onChange={""} />
+              <Search value={searchValue} onChange={handleSearchChange} />
             </div>
 
             {/* NAVBAR */}
@@ -65,7 +74,6 @@ const Header: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* SECOND HEADER --- ONLY FOT MOBILE AND TABLES */}
       </header>
     </>
   );
