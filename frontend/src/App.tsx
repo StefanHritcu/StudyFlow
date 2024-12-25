@@ -13,10 +13,12 @@ const App: React.FC = () => {
         <div>
           <Header />
           <SecondHeader />
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/example" element={<Example />} />
-          </Routes>
+          <main>
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/example" element={<Example />} />
+            </Routes>
+          </main>
         </div>
       </HelmetProvider>
     </>

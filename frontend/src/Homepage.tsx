@@ -1,5 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import Sidebar from "./Sidebar";
+import CloseSidebar from "./homepageComponents/CloseSidebar";
 
 const Homepage: React.FC = () => {
   return (
@@ -19,8 +21,13 @@ const Homepage: React.FC = () => {
         <meta property="og:url" content="www.google.it" />
       </Helmet>
 
-      <div>
-        <h1>homepage</h1>
+      <div className="flex">
+        <CloseSidebar />
+
+        {/* HERE MAIN HOMEPAGE */}
+        <div className="flex-1">
+          <p>Welcome to the homepage!</p>
+        </div>
       </div>
     </>
   );
