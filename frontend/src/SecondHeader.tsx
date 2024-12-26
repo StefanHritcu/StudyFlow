@@ -23,7 +23,7 @@ const SecondHeader: React.FC = () => {
   };
   return (
     <>
-      <header className="tablet:hidden bg-mainColor h-aut border-b h-11 border-paragraphColor">
+      <header className="tablet:hidden bg-secondColor h-aut border-b h-11 border-paragraphColor">
         <div className="flex items-center justify-end p-2">
           <div className="w-[160%]"></div>
           <Search

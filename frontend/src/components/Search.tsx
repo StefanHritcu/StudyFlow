@@ -38,8 +38,8 @@ const Search: React.FC<SearchProps> = ({
   }, [isFocused]);
 
   return (
-    <div className="w-full bg-secondColor py-1 px-2 flex items-center rounded-lg h-7">
-      <FaSearch className="w-4 h-4 mr-4 text-paragraphColor" />
+    <div className="w-full bg-paragraphColor py-1 px-2 flex items-center rounded-lg h-7">
+      <FaSearch className="w-4 h-4 mr-4 text-secondColor" />
       <motion.input
         type="text"
         placeholder={isFocused ? "" : placeholder}
@@ -47,7 +47,7 @@ const Search: React.FC<SearchProps> = ({
         onChange={onChange}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
-        className="flex bg-transparent outline-none text-mainTextColor placeholder:text-[12px] placeholder:text-paragraphColor"
+        className="flex bg-transparent outline-none text-secondColor placeholder:text-[12px] placeholder:text-text-secondColor"
         animate={{
           width: isSecondHeaderHovered ? "320px" : "160px",
         }}

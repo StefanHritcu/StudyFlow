@@ -21,12 +21,16 @@ const Homepage: React.FC = () => {
         <meta property="og:url" content="www.google.it" />
       </Helmet>
 
-      <div className="flex">
+      <div className="relative">
         <CloseSidebar />
+        <Sidebar />
 
         {/* HERE MAIN HOMEPAGE */}
-        <div className="flex-1">
-          <p>Welcome to the homepage!</p>
+        <div className="ml-14">
+          <div className="p-4">
+            <h1>Homepage</h1>
+            <p>Lorem.</p>
+          </div>
         </div>
       </div>
     </>

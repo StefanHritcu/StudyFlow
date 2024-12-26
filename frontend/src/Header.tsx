@@ -18,12 +18,12 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className="bg-mainColor h-auto border-b border-paragraphColor">
+      <header className="bg-secondColor h-auto border-b border-paragraphColor">
         {/* FIRST HEADER */}
         <div className="flex items-center justify-between">
           {/* LOGO */}
           <Link to="/">
-            <div className="text-center w-[150px] tablet:w-[190px] tablet-lg:w-[220px] laptop:w-[290px] border-r border-paragraphColor">
+            <div className="text-center w-[200px] tablet-lg:w-[220px] laptop:w-[290px] border-r border-paragraphColor">
               <h2 className="p-2 text-[16px] tablet:text-[18px] tablet-xl:text-[20px] laptop:text-[24px]">
                 My Workspace
               </h2>
