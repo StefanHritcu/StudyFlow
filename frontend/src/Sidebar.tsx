@@ -2,33 +2,40 @@ import React from "react";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 import { useAppDispatch, useAppSelector } from "./redux/Hook";
 import { toggleSidebar } from "./redux/slices/MainSlice";
+import { motion } from "framer-motion";
+import Dokumente from "./assets/sidebarIMG/dokumente.svg";
 
 const Sidebar: React.FC = () => {
-  const sidebarActive = useAppSelector((state) => state.main.sidebarActive); // Seleziona lo stato
+  const sidebarActive = useAppSelector((state) => state.main.sidebarActive);
   const dispatch = useAppDispatch();
 
   const handleCloseSidebar = () => {
-    dispatch(toggleSidebar()); // Chiama l'azione Redux
+    dispatch(toggleSidebar());
   };
 
   return (
-    <div
-      className={`absolute top-0 left-0 h-screen bg-secondColor border-r border-paragraphColor w-[200px] tablet-lg:w-[220px] laptop:w-[290px] ${
-        sidebarActive ? "block" : "hidden"
-      }`}
+    <motion.div
+      className="absolute top-0 left-0 h-screen bg-secondColor border-r border-paragraphColor w-[200px] tablet-lg:w-[220px] laptop:w-[290px]"
+      initial={{ x: -400 }}
+      animate={{ x: sidebarActive ? 0 : -400 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
     >
       <div className="relative">
         <div className="flex h-full">
           {/* LEFT SIDE -- LOGO AND ICONS */}
-          <div className="w-[60px] border-r border-paragraphColor">
-            <div className="h-14 border-b border-paragraphColor">
-              <div>LOGO</div>
+          <div className="flex flex-col w-[60px] mt-14 h-screen border-r border-paragraphColor">
+            <div className="p-3">
+              <img src={Dokumente} alt="dokumnente imqage" />
             </div>
-            <p>icon</p>
-            <p>icon</p>
-            <p>icon</p>
-            <p>icon</p>
-            <p>icon</p>
+            <div className="p-3">
+              <img src={Dokumente} alt="dokumnente imqage" />
+            </div>
+            <div className="p-3">
+              <img src={Dokumente} alt="dokumnente imqage" />
+            </div>
+            <div className="p-3">
+              <img src={Dokumente} alt="dokumnente imqage" />
+            </div>
           </div>
 
           {/* RIGHT SIDE - NAME PROJECT AND CONTENT ICON SELECTED */}
@@ -47,7 +54,7 @@ const Sidebar: React.FC = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
