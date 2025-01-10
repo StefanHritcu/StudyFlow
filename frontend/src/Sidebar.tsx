@@ -3,7 +3,10 @@ import { IoIosArrowDropleftCircle } from "react-icons/io";
 import { useAppDispatch, useAppSelector } from "./redux/Hook";
 import { toggleSidebar } from "./redux/slices/MainSlice";
 import { motion } from "framer-motion";
-import Dokumente from "./assets/sidebarIMG/dokumente.svg";
+import { RiFoldersLine } from "react-icons/ri";
+import { FaHeart } from "react-icons/fa";
+import { FiBell } from "react-icons/fi";
+import { MdAssignmentAdd } from "react-icons/md";
 
 const Sidebar: React.FC = () => {
   const sidebarActive = useAppSelector((state) => state.main.sidebarActive);
@@ -24,17 +27,17 @@ const Sidebar: React.FC = () => {
         <div className="flex h-full">
           {/* LEFT SIDE -- LOGO AND ICONS */}
           <div className="flex flex-col w-[60px] mt-14 h-screen border-r border-paragraphColor">
-            <div className="p-3">
-              <img src={Dokumente} alt="dokumnente imqage" />
+            <div className="p-3 mt-4 tablet-lg:mt-8 mb-2 tablet-lg:mb-4 mx-auto">
+              <RiFoldersLine className="w-7 h-7 text-mainTextColor cursor-pointer hover:scale-110 duration-300 transform-transition hover:text-specialBlue" />
             </div>
-            <div className="p-3">
-              <img src={Dokumente} alt="dokumnente imqage" />
+            <div className="p-3 my-2 tablet-lg:my-4 mx-auto">
+              <FaHeart className="w-7 h-7 text-mainTextColor cursor-pointer hover:scale-110 duration-300 transform-transition hover:text-specialBlue" />
             </div>
-            <div className="p-3">
-              <img src={Dokumente} alt="dokumnente imqage" />
+            <div className="p-3 my-2 tablet-lg:my-4 mx-auto">
+              <FiBell className="w-7 h-7 text-mainTextColor cursor-pointer hover:scale-110 duration-300 transform-transition hover:text-specialBlue" />
             </div>
-            <div className="p-3">
-              <img src={Dokumente} alt="dokumnente imqage" />
+            <div className="p-3 mt-4 tablet-lg:mt-8 mb-4 tablet-lg:mb-8 mx-auto">
+              <MdAssignmentAdd className="w-7 h-7 text-mainTextColor cursor-pointer hover:scale-110 duration-300 transform-transition hover:text-specialBlue" />
             </div>
           </div>
 
